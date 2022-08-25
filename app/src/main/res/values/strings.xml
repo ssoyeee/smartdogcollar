@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">DOGEAR</string>
+    <string name="title_activity_bluetooth">BluetoothActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- DeviceListActivity -->
+
+
+    <string name="scanning">장치 검색 중</string>
+
+    <string name="select_device">select a device to connect</string>
+
+    <string name="none_paired">앱 이용 전, 가지고 계신 블루투스 \n 제품을 연결해주세요.</string>
+
+    <string name="none_found">장치 없음</string>
+
+    <string name="title_paired_devices">Paired Devices</string>
+
+    <string name="title_other_devices">Other Available Devices</string>
+
+    <string name="button_scan"></string>
+
+    <!-- Options Menu -->
+
+
+    <string name="secure_connect">Connect a device - Secure</string>
+
+    <string name="insecure_connect">Connect a device - Insecure</string>
+
+    <string name="discoverable">Make discoverable</string>
+    <string name="title_activity_walk">WalkActivity</string>
+    <string name="title_activity_active">ActiveActivity</string>
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+</resources>

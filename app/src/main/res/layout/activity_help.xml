@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/help"
+android:orientation="vertical"
+tools:context="com.example.samsung.dogear.helpActivity">
+
+
+<Button
+    android:id="@+id/close"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="510dp"
+    android:background="@drawable/ic_cancel_black_24dp" />
+</LinearLayout>

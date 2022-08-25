@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samsung.dogear.MainActivity">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame"
+        android:layout_width="1080px"
+        android:layout_height="1080px"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/dog"
+            android:src="@drawable/main" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="130dp"
+            android:background="#00ff0000"
+            android:text="  /"
+            android:textSize="21pt" />
+
+
+        <TextView
+            android:id="@+id/ing_ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="130dp"
+            android:background="#00ff0000"
+            android:text="8120"
+            android:textSize="21pt" />
+
+        <TextView
+            android:id="@+id/total_ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="185dp"
+            android:background="#00ff0000"
+            android:text="10000"
+            android:textSize="21pt" />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:paddingTop="20dp">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#939393" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/line1"
+        android:paddingLeft="4dp">
+
+
+        <Button
+            android:id="@+id/distance_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="Distacne"
+            android:textColor="#FF939393"
+            android:textSize="6pt" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="70dp"
+            android:background="#FF939393" />
+
+        <Button
+            android:id="@+id/temp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="Temperate"
+            android:textColor="#FF939393"
+            android:textSize="6pt" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="70dp"
+            android:background="#FF939393" />
+
+        <Button
+            android:id="@+id/bark_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="Bark"
+            android:textColor="#FF939393"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#FF939393" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/icon1"
+            android:layout_width="360px"
+            android:layout_height="150px"
+            android:background="@drawable/home" />
+
+        <Button
+            android:id="@+id/icon2"
+            android:layout_width="360px"
+            android:layout_height="150px"
+            android:background="@drawable/state_bt" />
+
+        <Button
+            android:id="@+id/icon3"
+            android:layout_width="360px"
+            android:layout_height="150px"
+            android:background="@drawable/setting_bt" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="42dp"
+        android:layout_weight="1"
+        android:text="0cm"
+        android:textColor="#FF939393"
+        android:textSize="7.5pt"
+        android:layout_alignBaseline="@+id/temperate"
+        android:layout_alignBottom="@+id/temperate"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/temperate"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="170dp"
+        android:layout_weight="0.5"
+        android:text="0"
+        android:textColor="#FF939393"
+        android:textSize="7.5pt"
+        android:layout_marginStart="80dp"
+        android:layout_alignBaseline="@+id/bark"
+        android:layout_alignBottom="@+id/bark"
+        android:layout_toEndOf="@+id/distance" />
+
+    <TextView
+        android:id="@+id/bark"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="0.33"
+        android:text="49"
+        android:textColor="#FF939393"
+        android:textSize="7.5pt"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="53dp"
+        android:layout_below="@+id/line1"
+        android:layout_alignParentEnd="true"        />
+
+
+</RelativeLayout>

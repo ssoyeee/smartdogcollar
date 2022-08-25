@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.samsung.dogear.SelectDogActivity">
+
+    <LinearLayout
+        android:paddingTop="26dp"
+        android:id="@+id/profile_container"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="26dp"
+            android:layout_height="3px"
+            android:background="#8e8d8d"/>
+        <TextView
+            android:text="List"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="270dp"
+            android:layout_height="3px"
+            android:background="#8e8d8d"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dog_list"
+        android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        >
+    </ListView>
+
+    <View
+        android:paddingTop="10dp"
+        android:background="#8e8d8d"
+        android:layout_width="fill_parent"
+        android:layout_height="3px"/>
+
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/add_btn"
+        android:background="@drawable/ic_add_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+
+</LinearLayout>

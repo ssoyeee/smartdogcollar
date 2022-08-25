@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samsung.dogear.EditProfileActivityActivity">
+
+    <LinearLayout
+        android:paddingTop="26dp"
+        android:id="@+id/title_container"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="26dp"
+            android:layout_height="3px"
+            android:background="#8e8d8d"/>
+        <TextView
+            android:text="Add"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="270dp"
+            android:layout_height="3px"
+            android:background="#8e8d8d"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="100dp"
+        android:layout_below="@+id/title_container"
+        android:id="@+id/photo"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/button_background"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:id="@+id/dog_name_container"
+        android:paddingTop="35dp"
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp"
+        android:layout_below="@+id/photo"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="DOG NAME"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            android:layout_width="430px"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="text"
+            android:id="@+id/dog_name"
+            android:background="#FFFFFF"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dog_birth_container"
+        android:paddingTop="20dp"
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dog_name_container"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="BIRTH DAY"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            android:layout_width="430px"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="text"
+            android:hint="ex) 2017.08.21"
+            android:singleLine="true"
+            android:id="@+id/dog_birth"
+            android:background="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dog_weight_container"
+        android:paddingTop="20dp"
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp"
+        android:layout_below="@+id/dog_birth_container"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="WEIGHT"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            android:layout_width="430px"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/dog_weight"
+            android:singleLine="true"
+            android:background="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dog_gender_container"
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/dog_length_container"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="GENDER"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            android:layout_width="430px"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/dog_gender_male"
+                android:text="Male"
+                android:layout_weight="1"
+                android:textColor="#676767"
+                android:textSize="9pt"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/dog_gender_female"
+                android:text="Female"
+                android:layout_weight="1"
+                android:textColor="#676767"
+                android:textSize="9pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dog_height_container"
+        android:paddingTop="20dp"
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp"
+        android:layout_below="@+id/dog_weight_container"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="HEIGHT"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            android:layout_width="430px"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:id="@+id/dog_height"
+            android:background="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dog_length_container"
+        android:paddingTop="20dp"
+        android:paddingRight="26dp"
+        android:paddingLeft="26dp"
+        android:layout_below="@+id/dog_height_container"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="LENGTH"
+            android:textSize="9pt"
+            android:textColor="#676767"
+            android:textStyle="bold"
+            android:layout_width="430px"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:id="@+id/dog_length"
+            android:background="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_add"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/dog_length_container"
+        android:textSize="8pt"
+        android:layout_centerHorizontal="true"
+        android:textColor="#676767"
+        android:text="   Add Profile   "
+        android:background="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+</RelativeLayout>
