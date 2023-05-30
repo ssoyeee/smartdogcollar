@@ -1,5 +1,5 @@
 # smartdogcollar
------------
+
 
 ### Overview:
 Smartdogcollar is a cutting-edge Android application designed to empower pet owners in effectively managing their furry companions' health and well-being. With its sleek design and user-friendly interface, this app offers a seamless and delightful experience, making pet care a breeze.
