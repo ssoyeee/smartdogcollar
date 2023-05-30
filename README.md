@@ -9,5 +9,5 @@ You can revolutionize how you care for your beloved pets. This extraordinary And
 
 ### Features:
 - Personalized Health Tracking: Effortlessly track your pet's vital health metrics, including vaccinations, medications, and dietary needs. Stay informed and never miss an important appointment or health update.
-- Activity Monitoring: Gain valuable insights into your pet's daily activities and exercise routines. Set goals, track progress, and ensure your pet maintains a healthy and active lifestyle.
+- Activity Monitoring: Gain valuable insights into your pet's daily activities and exercise routines by counting walks to analyzing barking behavior. Set goals, track progress, and ensure your pet maintains a healthy and active lifestyle.
 - Medical Reminders: Receive timely reminders for medication schedules, vaccinations, and vet appointments. Stay on top of your pet's healthcare routine and ensure their health is always a top priority.
